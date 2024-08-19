@@ -26,10 +26,13 @@
   </head>
   <body class="">
     <!-- header/Nav section -->
+    <!-- Header / Nav Section -->
+    <!-- Header / Nav Section -->
     <div
-      class="flex justify-between bg-white items-center mx-6 md:mx-24 p-4 relative"
+      class="flex justify-between items-center bg-white w-full px-6 md:px-24 p-4 relative z-50"
     >
-      <img src="/images/logo.svg" alt="logo" class="" />
+      <img src="/images/logo.svg" alt="logo" />
+
       <!-- Menu items (hidden on mobile) -->
       <div class="hidden md:flex gap-8 text-gray-400 font-semibold" id="menu">
         <h1
@@ -61,15 +64,19 @@
 
       <!-- Hamburger / Cancel Icon for mobile -->
       <div class="md:hidden cursor-pointer" onclick="toggleMenu()">
-        <img src="images/icon-hamburger.svg" alt="" id="hamburger-icon" />
-
+        <img
+          src="/images/icon-hamburger.svg"
+          alt="Hamburger Menu"
+          id="hamburger-icon"
+        />
         <img
           src="/images/icon-close.svg"
-          alt=""
+          alt="Close Menu"
           id="cancel-icon"
           class="hidden"
         />
       </div>
+
       <!-- Button (hidden on mobile) -->
       <button
         class="hidden md:block font-semibold text-white px-6 rounded-full py-2 bg-gradient-to-r from-[#5CA161] to-[#1FB7B6] hover:from-[#6FD67F] hover:to-[#34C9C5]"
@@ -78,15 +85,16 @@
       </button>
     </div>
 
+    <!-- Mobile Overlay -->
     <div
       id="overlay"
-      class="fixed inset-x-0 top-12 bottom-0 bg-black bg-opacity-50 hidden z-10"
+      class="fixed inset-x-0 top-0 bottom-0 bg-black bg-opacity-50 hidden z-20"
     ></div>
 
-    <!-- Mobile Modal Card (40vh) -->
+    <!-- Mobile Menu -->
     <div
       id="mobile-menu-card"
-      class="fixed top-20 left-0 right-0 mx-auto bg-white rounded-md shadow-lg hidden z-50 w-11/12 md:w-1/2 h-[40vh] p-8"
+      class="fixed top-20 left-0 right-0 mx-auto bg-white rounded-md shadow-lg hidden z-50 w-11/12 md:w-1/2 p-8"
     >
       <div
         class="flex flex-col gap-4 text-center text-gray-400 font-semibold text-lg"
@@ -98,11 +106,13 @@
         <h1>Careers</h1>
       </div>
     </div>
+
     <!-- hero section -->
+    <!-- Hero section -->
     <div
-      class="flex flex-col-reverse md:flex-row bg-gray-50 justify-between items-center md:items-start text-center md:text-left"
+      class="flex flex-col-reverse md:flex-row bg-gray-50 justify-between items-center md:items-start text-center md:text-left w-full overflow-hidden"
     >
-      <div class="m-6 md:m-24">
+      <div class="m-6 md:m-24 z-10">
         <h1 class="text-4xl md:text-4xl lg:text-5xl">
           Next generation <br />
           digital banking
@@ -120,19 +130,21 @@
           Request Invite
         </button>
       </div>
-      <div class="flex justify-center">
-        <!-- <img src="/images/bg-intro-mobile.svg" alt="" class="" /> -->
-        <!-- <img src="/images/bg-intro-desktop.svg" alt="" class="" /> -->
+
+      <!-- Background image for different screen sizes -->
+      <div
+        class="relative flex justify-center w-full md:w-[700px] h-[500px] md:h-[600px] bg-[url('/images/bg-intro-mobile.svg')] md:bg-[url('/images/bg-intro-desktop.svg')] bg-no-repeat bg-center md:bg-left overflow-hidden z-10 md:-mt-12 -mt-32"
+      >
         <img
           src="/images/image-mockups.png"
-          alt=""
-          class="object-contain h-[400px] w-[400px] md:h-[600px] md:-mt-20 -mt-28"
+          alt="mockup"
+          class="object-contain z-10 h-[500px] w-[400px] md:h-[650px] md:w-[700px] md:-mr-40 -mr-0 md:-mt-8 -mt-16"
         />
       </div>
     </div>
 
     <!-- why choose us -->
-    <div class="bg-gray-100 md:-mt-32 pb-12">
+    <div class="bg-gray-100 md:-mt-32 -mt-0 pb-12">
       <h1 class="text-4xl text-center md:text-left md:ml-24 pt-16 mx-8">
         Why choose Easybank?
       </h1>
